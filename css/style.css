@@ -3,8 +3,12 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: lighter;
+}
+
+.fontRaleway {
+  font-family: 'Raleway', sans-serif;
 }
 
 a {
@@ -113,6 +117,7 @@ img {
 }
 
 .about_description {
+  word-spacing: 1px;
   font-size: 20px;
   color: #FFF;
 }
@@ -154,10 +159,12 @@ img {
 
 .work_about_text {
   display: inline-block;
-  width: 60%;
+  width: 55%;
   margin-right: 90px;
   font-size: 21px;
+  line-height: 1.5;
   word-spacing: 2px;
+  word-break: break-word;
 }
 
 .mail-btn {
