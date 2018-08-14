@@ -2,11 +2,23 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+}
+
+a {
+  display: inline-block;
+	text-decoration: none ;
+}
+
+img {
+  vertical-align: bottom;
+}
+
 .contents_area {
   width: 1100px;
   margin: 0 auto;
-  font-family: 'Raleway', sans-serif;
-  font-weight: lighter;
 }
 
 .header {
@@ -35,8 +47,8 @@
   border: none;
   cursor: pointer;
   outline: none;
-  background-color: #74cfae;
   font-size: 12px;
+  background-color: #74cfae;
   color: #FFF;
   transition: all 300ms 0s ease;
 }
@@ -45,8 +57,11 @@
   color: #333;
 }
 
-.main_visual {
+.main {
   margin-top: 94px;
+}
+
+.main_visual {
   padding: 250px 0px;
   background-color: #f2f2f2;
 }
@@ -63,7 +78,7 @@
   color: #74cfae;
 }
 
-.main_visual_subtitle {
+.main_visual_text {
   font-size: 30px;
   color: #c0c0c0;
 }
@@ -73,6 +88,10 @@
   background-color: #74cfae;
 }
 
+.about_inner {
+  font-size: 0px;
+}
+
 .outer_iphone {
   display: inline-block;
   width: 400px;
@@ -80,9 +99,10 @@
 }
 
 .about_textbox {
+  display: inline-block;
   width: 700px;
-  float: right;
   text-align: center;
+  vertical-align: top;
   line-height: 1.3;
 }
 
@@ -96,15 +116,11 @@
   font-size: 20px;
   color: #FFF;
 }
-/*  our_latest_work  */
+
 .work {
   padding: 60px 0 70px 0;
   background-color: #f2f2f2;
   text-align: center;
-}
-
-.work_inner {
-
 }
 
 .work_title {
@@ -119,17 +135,21 @@
 }
 
 .flex_item {
-  margin-bottom: 80px;
   opacity:0.7;
   transition: opacity 300ms 0s ease;
+}
+
+.work a:nth-child(-n+3) {
+  margin-bottom: 80px;
 }
 
 .flex_item:hover {
   opacity: 1;
 }
+
 .work_about {
-  margin-top: 10px;
-  font-size:0;
+  margin-top: 90px;
+  font-size: 0;
 }
 
 .work_about_text {
@@ -177,11 +197,11 @@
   margin-left: 180px;
 }
 
-.our_skills_inner h1 + figure {
+.our_skills_inner h2 + figure {
   margin-left: 0;
 }
 
-figcaption {
+.our_skills figcaption {
   margin-top: 16px;
 }
 
@@ -192,23 +212,26 @@ figcaption {
 
 .sns ul {
   text-align: center;
+  font-size: 0px;
 }
 
 .sns li {
   display: inline-block;
+}
+
+.sns .fa {
+  font-size: 50px;
+  color: #74cfac;
+}
+
+.sns a {
   width: 185px;
   padding: 30px;
   transition: all 300ms 0s ease;
 }
 
-.sns li:hover {
+.sns a:hover {
   background-color: #FFF;
-}
-
-.sns .fa {
-  font-size: 3em;
-  color: #74cfac;
-
 }
 
 .footer {
