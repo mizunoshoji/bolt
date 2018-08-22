@@ -198,11 +198,11 @@ img {
   margin-left: 180px;
 }
 
-.our_skills_inner h2 + figure {
+.our_skills_inner figure:first-of-type {
   margin-left: 0;
 }
 
-.our_skills figcaption {
+.skill_graph_caption {
   margin-top: 16px;
 }
 
@@ -211,12 +211,12 @@ img {
   background-color: #f2f2f2;
 }
 
-.sns ul {
+.sns_list {
   text-align: center;
-  font-size: 0px;
+  font-size: 0;
 }
 
-.sns li {
+.sns_list > li {
   display: inline-block;
 }
 
@@ -225,18 +225,18 @@ img {
   color: #74cfac;
 }
 
-.sns a {
+.sns_list > li > a {
   width: 185px;
   padding: 30px;
   transition: all 300ms 0s ease;
 }
 
-.sns a:hover {
+.sns_list > li > a:hover {
   background-color: #FFF;
 }
 
 .footer {
-  padding: 20px 0 25px 0;
+  padding: 20px 0 25px;
   background-color: #74cfae;
 }
 
@@ -254,6 +254,9 @@ img {
     width: 97%;
   }
 
+  .about {
+    padding-bottom: 25px;
+  }
   .outer_iphone {
     width: 100%;
     margin-bottom: 20px;
@@ -263,20 +266,26 @@ img {
     width: 100%;
   }
 
-  .about_description {
-    margin: 0 60px 25px;
-  }
-
   .flex_container {
-    flex-direction: column;
+    display: block;
   }
 
   .flex_container a:nth-child(-n+3) {
     margin-bottom: 0;
   }
 
-  .flex_container a:nth-child(3){
+  .flex_container a:nth-child(3n) {
     margin-bottom: 80px;
+  }
+
+  .flex_container a:last-child {
+    margin-bottom: 0;
+  }
+
+  .flex_item {
+    display: block;
+    width: 300px;
+    margin: 0 auto ;
   }
 
   .work_about {
@@ -285,7 +294,7 @@ img {
 
   .work_about_text {
     width: 100%;
-    margin-right: 0px;
+    margin-right: 0;
     margin-bottom: 40px;
   }
 
@@ -360,6 +369,15 @@ img {
     font-size: 80px;
   }
 
+  .break::before {
+    content: "\A";
+    white-space: pre;
+  }
+
+  .about {
+    padding-bottom: 25px;
+  }
+
   .outer_iphone {
     width: 100%;
     margin-bottom: 20px;
@@ -369,20 +387,26 @@ img {
     width: 100%;
   }
 
-  .about_description {
-    margin: 0 60px 25px;
-  }
-
   .flex_container {
-    flex-direction: column;
+    display: block;
   }
 
   .flex_container a:nth-child(-n+3) {
     margin-bottom: 0;
   }
 
-  .flex_container a:nth-child(3){
+  .flex_container a:nth-child(3n){
     margin-bottom: 80px;
+  }
+
+  .flex_container a:last-child {
+    margin-bottom: 0;
+  }
+
+  .flex_item {
+    display: block;
+    width: 300px;
+    margin: 0 auto ;
   }
 
   .work_about {
@@ -409,10 +433,11 @@ img {
     padding: 50px 15px;
   }
 
-  .sns li {
+  .sns_list > li {
     display: block;
   }
-  .sns a {
+  
+  .sns_list > li > a {
     width: 100%;
   }
 }
