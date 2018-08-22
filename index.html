@@ -1,46 +1,60 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="format-detection" content="telephone=no">
-    <title>Bolt - Free Bootstrap 3 Theme</title>
-    <meta name="description" content="This is my portfolio site.">
-    <meta name="keyword" content="bolt, bootstrap, portfolio">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <header class="header">
-      <div class="header_inner contents_area">
-        <a href="index.html">
-          <i class="fa fa-bolt icon_bolt" aria-hidden="true"></i>
-        </a>
-        <a class="header_btn">Contact</a>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <title>Bolt - Free Bootstrap 3 Theme</title>
+  <meta name="description" content="This is my portfolio site.">
+  <meta name="keyword" content="bolt, bootstrap, portfolio">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header_inner contents_area">
+      <a href="index.html">
+        <i class="fa fa-bolt icon_bolt" aria-hidden="true"></i>
+      </a>
+      <a href="index.html" class="header_btn">Contact</a>
+      <!--sp用glovalnav ハンバーガーメニュー -->
+      <div class="sp-menu-btn close" id="nav-toggle">
+        <span class="sp-menu-btn-bar"></span>
+        <span class="sp-menu-btn-bar"></span>
+        <span class="sp-menu-btn-bar"></span>
       </div>
-    </header>
-    <main class="main">
-      <section class="main_visual">
-        <div class="main_visual_inner contents_area fontRaleway">
-          <h1 class="main_visual_title">Bolt Theme</h1>
-          <p class="main_visual_text">FREE BOOTSTRAP THEMES</p>
-        </div>
-      </section>
+    </div>
+    <nav class="g-nav close" id="nav-list">
+      <ul class="sp-menu">
+        <li>
+          <a href="index.html" class="sp-menu-item">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-      <article>
-        <section class="about">
-          <div class="about_inner contents_area">
-            <div class="outer_iphone">
-              <img src="./img/iphone.png">
-            </div>
-            <div class="about_textbox">
-              <h2 class="about_title fontRaleway">WHAT WE CAN DO?</h2>
-              <p class="about_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                 when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+  <main class="main">
+    <section class="main_visual">
+      <div class="main_visual_inner contents_area fontRaleway">
+        <h1 class="main_visual_title">Bolt Theme</h1>
+        <p class="main_visual_text">FREE BOOTSTRAP THEMES</p>
+      </div>
+    </section>
+
+    <article>
+      <section class="about">
+        <div class="about_inner contents_area">
+          <div class="outer_iphone">
+            <img src="./img/iphone.png">
+          </div>
+          <div class="about_textbox">
+            <h2 class="about_title fontRaleway">WHAT WE CAN DO?</h2>
+            <p class="about_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
             </div>
           </div>
         </section>
@@ -78,19 +92,19 @@
         <section class="our_skills">
           <div class="our_skills_inner contents_area">
             <h2 class="our_skills_title fontRaleway">OUR SKILLS</h2>
-            <figure class="circle_graph">
+            <figure class="skill_graph">
               <img src="./img/circle_01.png">
               <figcaption>JavaScript</figcaption>
             </figure>
-            <figure class="circle_graph">
+            <figure class="skill_graph">
               <img src="./img/circle_02.png">
               <figcaption>Bootstrap</figcaption>
             </figure>
-            <figure class="circle_graph">
+            <figure class="skill_graph">
               <img src="./img/circle_03.png">
               <figcaption>WordPress</figcaption>
             </figure>
-            <figure class="circle_graph">
+            <figure class="skill_graph">
               <img src="./img/circle_04.png">
               <figcaption>Photoshop</figcaption>
             </figure>
@@ -120,4 +134,4 @@
     <script src="js/script.js"></script>
 
   </body>
-</html>
+  </html>
